@@ -555,7 +555,7 @@ function homePageLoad(){
     $('#searchAssetButton').hide();
     $('#addAssetButton').hide();
     get_asset_page('home');
-	get_data_wo();//
+	get_data_wo('count_wo');
 }
 
 function assetPageLoad(){
@@ -643,7 +643,7 @@ function get_asset_page(page){
             $("#data_content").append(data);
             if(page=='preventive'){
                 // drawChartPreventive(100,50,20);
-                get_data_wo();
+                get_data_wo('breakdown');
             }
             console.log("cek user : "+cek_user());
             if(cek_user()=='spvarea'||cek_user()=='mgrarea'||cek_user()=='mgrfront'){
