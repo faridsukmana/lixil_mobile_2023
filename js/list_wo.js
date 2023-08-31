@@ -1185,11 +1185,12 @@ function update_detail_wo(woid){
     })
 }
 
-function get_data_wo(){
+function get_data_wo(model){
+	var model = model;
     $.ajax({
         type: "POST",
         url:glo_url+"andon.php",
-        data:{'form':'count_wo'},
+        data:{'form':model},
         crossDomain:true,
         cache:false,
         async:false,
