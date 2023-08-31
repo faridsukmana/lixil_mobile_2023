@@ -555,6 +555,7 @@ function homePageLoad(){
     $('#searchAssetButton').hide();
     $('#addAssetButton').hide();
     get_asset_page('home');
+	get_data_wo();
 }
 
 function assetPageLoad(){
