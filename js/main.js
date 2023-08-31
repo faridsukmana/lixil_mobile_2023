@@ -1000,3 +1000,11 @@ function myScan(){
         
     });
 }
+
+function tab_breakdown(){
+    get_data_wo('breakdown');
+};
+
+function tab_oee(){
+     get_data_wo('count_wo');
+};
