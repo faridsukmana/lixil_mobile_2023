@@ -644,6 +644,9 @@ function get_asset_page(page){
             if(page=='preventive'){
                 // drawChartPreventive(100,50,20);
                 get_data_wo('breakdown');
+            }else if(page=='inventory'){
+                // drawChartPreventive(100,50,20);
+                get_data_wo('count_wo');
             }
             console.log("cek user : "+cek_user());
             if(cek_user()=='spvarea'||cek_user()=='mgrarea'||cek_user()=='mgrfront'){
@@ -1009,4 +1012,14 @@ function tab_breakdown(){
 function tab_oee(){
      get_data_wo('count_wo');
 	 $('#text_preventive').html('<strong class="text-black">Total OEE</strong></span>');
+};
+
+function tab_accuracy(){
+     get_data_wo('breakdown');
+	 $('#text_inventory').html('<strong class="text-black">Number of Accuracy</strong></span>');
+};
+
+function tab_avaibility(){
+     get_data_wo('count_wo');
+	 $('#text_inventory').html('<strong class="text-black">Number of Avaibility</strong></span>');
 };
