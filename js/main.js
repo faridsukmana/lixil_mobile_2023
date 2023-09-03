@@ -1003,8 +1003,10 @@ function myScan(){
 
 function tab_breakdown(){
     get_data_wo('breakdown');
+	$('#text_preventive').html('<strong class="text-black">Total Breakdown Active</strong></span>');
 };
 
 function tab_oee(){
      get_data_wo('count_wo');
+	 $('#text_preventive').html('<strong class="text-black">Total OEE</strong></span>');
 };
